@@ -23,11 +23,22 @@ The goals / steps of this project are the following:
 
 ### 1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+My pipeline consisted of 5 steps. 
 
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
+First, I converted the images to grayscale. 
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
+Second, I applied Gaussian Filter to reduce the noise included in the images.
+
+Third, I set polygon mask in order to make focus on the probable area in the images, then applied Canny Edge detection, to detect the edge lines of each object in the images.
+
+Fourth, I applied Hough Transform, to detect Lane lines. Then, I draw the lines on the masked image.
+
+Fifth, I add the lines on the original images.
+
+
+In order to draw a single line on the left and right lanes, I modified the draw_lines() function.
+
+I separated the group of lines to right lanes & left lanes by the value of slope. Especially, I adjusted the value condition of the slope to +-0.55, taking into the probable slope value. Then, I took the mean of the start / end plot of the lines. Finally, I extend the lines to the bottom of images by calculating the new plot based on the mean plot & slope.
 
 ![alt text][image1]
 
