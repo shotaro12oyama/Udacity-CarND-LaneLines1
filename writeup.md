@@ -1,6 +1,6 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Report
+## Report
 
 
 ---
@@ -14,10 +14,9 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: ./test_images_output/pipeline_image.jpg "Example”
+[image1]: ./test_images_output/pipeline_image.jpg "Grayscale"
 
 ---
-
 
 ### Reflection
 
@@ -40,7 +39,6 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 
 I separated the group of lines to right lanes & left lanes by the value of slope. Especially, I adjusted the value condition of the slope to +-0.55, taking into the probable slope value. Then, I took the mean of the start / end plot of the lines. Finally, I extend the lines to the bottom of images by calculating the new plot based on the mean plot & slope.
 
-
 ![alt text][image1]
 
 
@@ -54,8 +52,6 @@ Another shortcoming could be happened when we come to an intersection or tunnel.
 
 
 
-
 ### 3. Suggest possible improvements to your pipeline
 
 A possible improvement would be to define the separated polygon and edge detection from right and left side in order to eliminate misleading objects / colors in the images.
-
