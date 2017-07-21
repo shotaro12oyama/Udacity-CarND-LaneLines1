@@ -38,7 +38,7 @@ Fifth, I add the lines on the original images.
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function.
 
-I separated the group of lines to right lanes & left lanes by the value of slope. Especially, I adjusted the value condition of the slope to +-0.55, taking into the probable slope value. Then, I took the mean of the start / end plot of the lines. Finally, I extend the lines to the bottom of images by calculating the new plot based on the mean plot & slope.
+I separated the group of lines to right lanes & left lanes by the value of slope. Especially, I adjusted the value condition of the slope to +-0.55, taking into the probable slope value. Then, I took the mean of the start / end plot of the lines. Finally, I extend the lines to the bottom of images by calculating the new plot based on the mean plot & slope:
 
 
 ![alt text][image1]
