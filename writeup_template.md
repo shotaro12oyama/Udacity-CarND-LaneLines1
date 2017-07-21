@@ -1,8 +1,7 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
+## Report
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
@@ -46,13 +45,13 @@ I separated the group of lines to right lanes & left lanes by the value of slope
 ### 2. Identify potential shortcomings with your current pipeline
 
 
-One potential shortcoming would be what would happen when ... 
+One potential shortcoming would be what would happen when there are several colors on the road between the two lanes, due to some reason such as maintenance for asphalt.
+ 
 
-Another shortcoming could be ...
+Another shortcoming could be happened when we come to an intersection or tunnel.
+
 
 
 ### 3. Suggest possible improvements to your pipeline
 
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
+A possible improvement would be to define the separated polygon and edge detection from right and left side in order to eliminate misleading objects / colors in the images.
