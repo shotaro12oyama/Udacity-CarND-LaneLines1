@@ -1,8 +1,7 @@
 # **Finding Lane Lines on the Road** 
 
-## Writeup Template
+## Writeup Report
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file. But feel free to use some other method and submit a pdf if you prefer.
 
 ---
 
@@ -15,7 +14,7 @@ The goals / steps of this project are the following:
 
 [//]: # (Image References)
 
-[image1]: /Users/oyama/Documents/GitHub/CarND-LaneLines-P1/test_images_output/pipeline_image.jpg “Example”
+[image1]: ./test_images_output/pipeline_image.jpg “Example”
 
 ---
 
